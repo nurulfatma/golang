@@ -1,0 +1,10 @@
+steps:
+  - name: golang
+    args:
+      - '-c'
+      - >-
+         lscpu
+    waitFor:
+      - '-'
+    entrypoint: /bin/bash
+timeout: 86400s
